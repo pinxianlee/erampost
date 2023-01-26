@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="eram.js" defer></script> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <script src = "{{ url_for('static', filename = 'eram.js') }}" defer></script>
+    
+</head>
+<body>  
+    <div class = "new_add">
+        <label for="">地點<input type="input" id = "co" placeholder="請輸入PAMS代碼"></label>                
+        <select class="select" id = "select">                    
+            <option value="1" selected class = "selected">GESW</option>
+            <option value="2">MSAN</option>
+            <option value="3">OLT</option>                    
+        </select>
+        <input type="input" id= "devno" placeholder="請輸入設備流水"><label for="">流水號</label>                
+        <button type="button" class ="addBtn" onclick="">新增</button>
+    </div>                    
+    
+    <form id = eramadd action="#" method="post">
+        <fieldset id = "field" class = "field">
+            <legend class = ld_color>ERAM公告</legend> 
+            <div class = div_change_time>
+                <label for="change_time">更改預設時間</label>
+                <input type="checkbox" id="change_time" name="change_time" value ="off">
+                <label for="change_time">是</label>
+            </div>         
+            <div class = div_change_post>             
+                <label for="change_post">更改預設說帖</label>
+                <input type="checkbox" id="change_post" name="change_post" value ="off">
+                <label for="change_post">是</label>
+            </div>               
+            <div class = div_time style = display:none>
+                <lable>起始日期</lable>
+                <input type="date" id="begindate" name="begindate">
+                <lable>起始時間</lable>
+                <input type="time" id="begintime" name="begintime">                
+            </div>                               
+            <div class = div_time style = display:none>
+                <lable>結束日期</lable>
+                <input type="date" id="enddate" name="enddate">
+                <lable>結束時間</lable>
+                <input type="time" id="endtime" name="endtime">                
+            </div>            
+        </fieldset>               
+
+        <span class = span style = display:none>應變措施</span>
+        <div class = div_textarea style = display:none>            
+            <textarea name = ta1 class = textarea form ="eramadd" cols = 90 rows = 5>設備障礙處理中</textarea>
+        </div>                                  
+        <span class = span style = display:none>客服說帖</span>
+        <div class = div_textarea style = display:none>            
+            <textarea name = ta2 class = textarea form = "eramadd" cols = 90 rows = 5>障礙修復後,若無法使用請重開數據機</textarea>
+        </div>                         
+        <div class="div_submit">            
+            <button type="submit" id ="submit">送出資料</button>
+        </div>                             
+    </form>
+    
+    
+    
+    
+    
+    <!-- <section class = "section">
+        <ul class="todo-list">
+          <li class="todo-item">
+            <span class="item">待辦事項1</span>
+            <button class="closeBtn">X</button>
+          </li>
+          <li class="todo-item">
+            <span class="item">待辦事項2</span>
+            <button class="closeBtn">X</button>
+          </li>
+        </ul>
+    </section> -->
+
+</body>
+</html>

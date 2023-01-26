@@ -1,0 +1,62 @@
+/* .div_line {
+    color: red
+  } */
+.ld_color{
+  color:black
+}
+
+.div_addBtn{
+  margin-left: 10px;
+  float : right
+  
+}
+
+/* .div_submit{  
+  float : right
+} */
+
+.field{
+  width : 600px  
+}
+
+/* .select {
+  color : red
+} */
+
+.new_add {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: red;
+  
+}
+
+/* .div_time{
+  display:none
+} */
+
+.div_change_time{    
+  display : flex;
+  justify-content:flex-end;   
+  color : blue;  
+}
+
+.div_change_post{  
+  display : flex;  
+  justify-content:flex-end;   
+  color : blue
+}
+
+.div_submit{
+  width : auto
+}
+
+.span{  
+  color: rgba(0, 38, 255, 0.644)
+}
+
+.textarea{
+  width : 750px;
+  color: gray;
+  font-size : 15px;
+}
+
